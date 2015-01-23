@@ -117,12 +117,14 @@
 			</Item>
 		</Item>
 		<Item Name="Seth Functions" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="Lifters" Type="Folder">
+				<Item Name="Manual_Level_Shift.vi" Type="VI" URL="../Seth Functions/Manual_Level_Shift.vi"/>
+				<Item Name="Lift_Level_Function.vi" Type="VI" URL="../Seth Functions/Lift_Level_Function.vi"/>
+				<Item Name="Lift_Function.vi" Type="VI" URL="../Seth Functions/Lift_Function.vi"/>
+			</Item>
 			<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
 			<Item Name="Gyro_Calibration.vi" Type="VI" URL="../Seth Functions/Gyro_Calibration.vi"/>
-			<Item Name="Lift_Function.vi" Type="VI" URL="../Seth Functions/Lift_Function.vi"/>
-			<Item Name="Lift_Level_Function.vi" Type="VI" URL="../Seth Functions/Lift_Level_Function.vi"/>
-			<Item Name="Manual_Level_Shift.vi" Type="VI" URL="../Seth Functions/Manual_Level_Shift.vi"/>
-			<Item Name="XOR5 New.vi" Type="VI" URL="../Seth Functions/XOR5 New.vi"/>
 			<Item Name="XOR5.vi" Type="VI" URL="../Seth Functions/XOR5.vi"/>
 		</Item>
 		<Item Name="Support Code" Type="Folder">
