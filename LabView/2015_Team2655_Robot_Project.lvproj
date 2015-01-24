@@ -101,22 +101,6 @@
 				<Item Name="ADXRS453_Test.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Test.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Josh Functions" Type="Folder">
-			<Item Name="Demo Code" Type="Folder">
-				<Item Name="subVIs" Type="Folder">
-					<Item Name="Complimentry Filter.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Complimentry Filter.vi"/>
-					<Item Name="Configure Accelerometer.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Configure Accelerometer.vi"/>
-					<Item Name="Configure Gyro.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Configure Gyro.vi"/>
-					<Item Name="Degrees per second to degrees.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Degrees per second to degrees.vi"/>
-					<Item Name="Setup 3D Picture Display.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Setup 3D Picture Display.vi"/>
-				</Item>
-				<Item Name="myComplemetary Filter.vi" Type="VI" URL="../Josh Functions/Demo Code/myComplemetary Filter.vi"/>
-			</Item>
-			<Item Name="Platypi Complementary Filter.aliases" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.aliases"/>
-			<Item Name="Platypi Complementary Filter.lvlps" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvlps"/>
-			<Item Name="Platypi Complementary Filter.lvproj" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvproj"/>
-			<Item Name="Platypi Complementary Filter.vi" Type="VI" URL="../Josh Functions/Platypi Complementary Filter.vi"/>
-		</Item>
 		<Item Name="Seth Functions" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Lifters" Type="Folder">
@@ -145,7 +129,22 @@
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="Zephan Functions" Type="Folder"/>
+		<Item Name="Functions (add new ones here)" Type="Folder">
+			<Item Name="Demo Code" Type="Folder">
+				<Item Name="subVIs" Type="Folder">
+					<Item Name="Complimentry Filter.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Complimentry Filter.vi"/>
+					<Item Name="Configure Accelerometer.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Configure Accelerometer.vi"/>
+					<Item Name="Configure Gyro.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Configure Gyro.vi"/>
+					<Item Name="Degrees per second to degrees.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Degrees per second to degrees.vi"/>
+					<Item Name="Setup 3D Picture Display.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Setup 3D Picture Display.vi"/>
+				</Item>
+				<Item Name="myComplemetary Filter.vi" Type="VI" URL="../Josh Functions/Demo Code/myComplemetary Filter.vi"/>
+			</Item>
+			<Item Name="Platypi Complementary Filter.aliases" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.aliases"/>
+			<Item Name="Platypi Complementary Filter.lvlps" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvlps"/>
+			<Item Name="Platypi Complementary Filter.lvproj" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvproj"/>
+			<Item Name="Platypi Complementary Filter.vi" Type="VI" URL="../Josh Functions/Platypi Complementary Filter.vi"/>
+		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
