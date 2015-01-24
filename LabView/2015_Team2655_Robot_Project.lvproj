@@ -48,6 +48,7 @@
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
 		<Property Name="host.TargetCPUID" Type="UInt">8</Property>
 		<Property Name="host.TargetOSID" Type="UInt">8</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
 		<Property Name="target.DoNotReboot" Type="Bool">true</Property>
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
@@ -79,34 +80,6 @@
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
-		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
-
-NI.ServerName default
-DocumentRoot "$LVSERVER_DOCROOT"
-TypesConfig "$LVSERVER_CONFIGROOT/mime.types"
-DirectoryIndex index.htm
-WorkerLimit 10
-InactivityTimeout 60
-
-LoadModulePath "$LVSERVER_MODULEPATHS"
-LoadModule LVAuth lvauthmodule
-LoadModule LVRFP lvrfpmodule
-
-#
-# Pipeline Definition
-#
-
-SetConnector netConnector
-
-AddHandler LVAuth
-AddHandler LVRFP
-
-AddHandler fileHandler ""
-
-AddOutputFilter chunkFilter
-
-
-</Property>
 		<Property Name="target.WebServer.Enabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogEnabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogPath" Type="Path">/c/ni-rt/system/www/www.log</Property>
@@ -117,6 +90,17 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="Sensors" Type="Folder">
+			<Item Name="ADXRS450" Type="Folder">
+				<Item Name="ADXRS453 SPI Gyro.aliases" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.aliases"/>
+				<Item Name="ADXRS453 SPI Gyro.lvlps" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.lvlps"/>
+				<Item Name="ADXRS453 SPI Gyro.lvproj" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.lvproj"/>
+				<Item Name="ADXRS453_Global.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Global.vi"/>
+				<Item Name="ADXRS453_Init.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Init.vi"/>
+				<Item Name="ADXRS453_Read.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Read.vi"/>
+				<Item Name="ADXRS453_Test.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Test.vi"/>
+			</Item>
+		</Item>
 		<Item Name="Josh Functions" Type="Folder">
 			<Item Name="Demo Code" Type="Folder">
 				<Item Name="subVIs" Type="Folder">
@@ -133,23 +117,14 @@ AddOutputFilter chunkFilter
 			<Item Name="Platypi Complementary Filter.lvproj" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvproj"/>
 			<Item Name="Platypi Complementary Filter.vi" Type="VI" URL="../Josh Functions/Platypi Complementary Filter.vi"/>
 		</Item>
-		<Item Name="Sensors" Type="Folder">
-			<Item Name="ADXRS450" Type="Folder">
-				<Item Name="ADXRS453 SPI Gyro.aliases" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.aliases"/>
-				<Item Name="ADXRS453 SPI Gyro.lvlps" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.lvlps"/>
-				<Item Name="ADXRS453 SPI Gyro.lvproj" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.lvproj"/>
-				<Item Name="ADXRS453_Global.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Global.vi"/>
-				<Item Name="ADXRS453_Init.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Init.vi"/>
-				<Item Name="ADXRS453_Read.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Read.vi"/>
-				<Item Name="ADXRS453_Test.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Test.vi"/>
-			</Item>
-		</Item>
 		<Item Name="Seth Functions" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Lifters" Type="Folder">
-				<Item Name="Manual_Level_Shift.vi" Type="VI" URL="../Seth Functions/Manual_Level_Shift.vi"/>
+				<Item Name="Detect_Level.vi" Type="VI" URL="../Seth Functions/Detect_Level.vi"/>
 				<Item Name="Lift_Level_Function.vi" Type="VI" URL="../Seth Functions/Lift_Level_Function.vi"/>
 				<Item Name="Lift_Function.vi" Type="VI" URL="../Seth Functions/Lift_Function.vi"/>
+				<Item Name="Increment.vi" Type="VI" URL="../Zephan Functions/Increment.vi"/>
+				<Item Name="Go_To_Level.vi" Type="VI" URL="../Seth Functions/Go_To_Level.vi"/>
 			</Item>
 			<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
 			<Item Name="Gyro_Calibration.vi" Type="VI" URL="../Seth Functions/Gyro_Calibration.vi"/>
@@ -169,9 +144,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="Zephan Functions" Type="Folder">
-			<Item Name="Increment.vi" Type="VI" URL="../Zephan Functions/Increment.vi"/>
-		</Item>
+		<Item Name="Zephan Functions" Type="Folder"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
