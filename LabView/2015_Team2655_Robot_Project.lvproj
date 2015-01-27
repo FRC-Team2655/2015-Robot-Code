@@ -80,6 +80,34 @@
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
+
+NI.ServerName default
+DocumentRoot "$LVSERVER_DOCROOT"
+TypesConfig "$LVSERVER_CONFIGROOT/mime.types"
+DirectoryIndex index.htm
+WorkerLimit 10
+InactivityTimeout 60
+
+LoadModulePath "$LVSERVER_MODULEPATHS"
+LoadModule LVAuth lvauthmodule
+LoadModule LVRFP lvrfpmodule
+
+#
+# Pipeline Definition
+#
+
+SetConnector netConnector
+
+AddHandler LVAuth
+AddHandler LVRFP
+
+AddHandler fileHandler ""
+
+AddOutputFilter chunkFilter
+
+
+</Property>
 		<Property Name="target.WebServer.Enabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogEnabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogPath" Type="Path">/c/ni-rt/system/www/www.log</Property>
@@ -101,20 +129,6 @@
 				<Item Name="ADXRS453_Test.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Test.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Seth Functions" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="Lifters" Type="Folder">
-				<Item Name="Detect_Any_Level.vi" Type="VI" URL="../Seth Functions/Detect_Any_Level.vi"/>
-				<Item Name="Level_Function.vi" Type="VI" URL="../Seth Functions/Level_Function.vi"/>
-				<Item Name="Lift_Function.vi" Type="VI" URL="../Seth Functions/Lift_Function.vi"/>
-				<Item Name="Increment.vi" Type="VI" URL="../Zephan Functions/Increment.vi"/>
-				<Item Name="Go_To_Level.vi" Type="VI" URL="../Seth Functions/Go_To_Level.vi"/>
-				<Item Name="Detect Given Level.vi" Type="VI" URL="../Seth Functions/Lifters/Detect Given Level.vi"/>
-			</Item>
-			<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
-			<Item Name="Gyro_Calibration.vi" Type="VI" URL="../Seth Functions/Gyro_Calibration.vi"/>
-			<Item Name="XOR5.vi" Type="VI" URL="../Seth Functions/XOR5.vi"/>
-		</Item>
 		<Item Name="Support Code" Type="Folder">
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
@@ -129,7 +143,7 @@
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="Functions (add new ones here)" Type="Folder">
+		<Item Name="Functions" Type="Folder">
 			<Item Name="Demo Code" Type="Folder">
 				<Item Name="subVIs" Type="Folder">
 					<Item Name="Complimentry Filter.vi" Type="VI" URL="../Josh Functions/Demo Code/subVIs/Complimentry Filter.vi"/>
@@ -140,10 +154,22 @@
 				</Item>
 				<Item Name="myComplemetary Filter.vi" Type="VI" URL="../Josh Functions/Demo Code/myComplemetary Filter.vi"/>
 			</Item>
+			<Item Name="Lifters" Type="Folder">
+				<Item Name="Detect_Any_Level.vi" Type="VI" URL="../Seth Functions/Detect_Any_Level.vi"/>
+				<Item Name="Level_Function.vi" Type="VI" URL="../Seth Functions/Level_Function.vi"/>
+				<Item Name="Lift_Function.vi" Type="VI" URL="../Seth Functions/Lift_Function.vi"/>
+				<Item Name="Increment.vi" Type="VI" URL="../Zephan Functions/Increment.vi"/>
+				<Item Name="Go_To_Level.vi" Type="VI" URL="../Seth Functions/Go_To_Level.vi"/>
+				<Item Name="Detect Given Level.vi" Type="VI" URL="../Seth Functions/Lifters/Detect Given Level.vi"/>
+			</Item>
 			<Item Name="Platypi Complementary Filter.aliases" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.aliases"/>
 			<Item Name="Platypi Complementary Filter.lvlps" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvlps"/>
 			<Item Name="Platypi Complementary Filter.lvproj" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvproj"/>
 			<Item Name="Platypi Complementary Filter.vi" Type="VI" URL="../Josh Functions/Platypi Complementary Filter.vi"/>
+			<Item Name="Two Buttons One output.vi" Type="VI" URL="../Seth Functions/Two Buttons One output.vi"/>
+			<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
+			<Item Name="Gyro_Calibration.vi" Type="VI" URL="../Seth Functions/Gyro_Calibration.vi"/>
+			<Item Name="XOR5.vi" Type="VI" URL="../Seth Functions/XOR5.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
