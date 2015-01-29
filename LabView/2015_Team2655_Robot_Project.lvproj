@@ -162,14 +162,17 @@ AddOutputFilter chunkFilter
 				<Item Name="Go_To_Level.vi" Type="VI" URL="../Seth Functions/Go_To_Level.vi"/>
 				<Item Name="Detect Given Level.vi" Type="VI" URL="../Seth Functions/Lifters/Detect Given Level.vi"/>
 			</Item>
+			<Item Name="Buttons" Type="Folder">
+				<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
+				<Item Name="XOR5.vi" Type="VI" URL="../Seth Functions/XOR5.vi"/>
+				<Item Name="Toggle.vi" Type="VI" URL="../Zephan Functions/Toggle.vi"/>
+				<Item Name="Two Buttons One output.vi" Type="VI" URL="../Seth Functions/Two Buttons One output.vi"/>
+			</Item>
 			<Item Name="Platypi Complementary Filter.aliases" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.aliases"/>
 			<Item Name="Platypi Complementary Filter.lvlps" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvlps"/>
 			<Item Name="Platypi Complementary Filter.lvproj" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvproj"/>
 			<Item Name="Platypi Complementary Filter.vi" Type="VI" URL="../Josh Functions/Platypi Complementary Filter.vi"/>
-			<Item Name="Two Buttons One output.vi" Type="VI" URL="../Seth Functions/Two Buttons One output.vi"/>
-			<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
 			<Item Name="Gyro_Calibration.vi" Type="VI" URL="../Seth Functions/Gyro_Calibration.vi"/>
-			<Item Name="XOR5.vi" Type="VI" URL="../Seth Functions/XOR5.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -678,6 +681,7 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Confirm Action.vi" Type="VI" URL="../Rachel Functions/Confirm Action.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
