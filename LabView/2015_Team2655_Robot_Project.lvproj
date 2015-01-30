@@ -167,6 +167,7 @@ AddOutputFilter chunkFilter
 				<Item Name="XOR5.vi" Type="VI" URL="../Seth Functions/XOR5.vi"/>
 				<Item Name="Toggle.vi" Type="VI" URL="../Zephan Functions/Toggle.vi"/>
 				<Item Name="Two Buttons One output.vi" Type="VI" URL="../Seth Functions/Two Buttons One output.vi"/>
+				<Item Name="Case Selector.vi" Type="VI" URL="../Juan Functions/Case Selector.vi"/>
 			</Item>
 			<Item Name="Platypi Complementary Filter.aliases" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.aliases"/>
 			<Item Name="Platypi Complementary Filter.lvlps" Type="Document" URL="../Josh Functions/Platypi Complementary Filter.lvlps"/>
