@@ -161,6 +161,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Increment.vi" Type="VI" URL="../Zephan Functions/Increment.vi"/>
 				<Item Name="Go_To_Level.vi" Type="VI" URL="../Seth Functions/Go_To_Level.vi"/>
 				<Item Name="Detect Given Level.vi" Type="VI" URL="../Seth Functions/Lifters/Detect Given Level.vi"/>
+				<Item Name="Front Lifter Control.vi" Type="VI" URL="../Zephan Functions/Front Lifter Control.vi"/>
 			</Item>
 			<Item Name="Buttons" Type="Folder">
 				<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
