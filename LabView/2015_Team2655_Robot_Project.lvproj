@@ -39,7 +39,7 @@
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">Target</Property>
-		<Property Name="alias.value" Type="Str">roboRIO-2655.local</Property>
+		<Property Name="alias.value" Type="Str">10.26.55.100</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;DeviceCode,76F2;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">76F2</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -161,6 +161,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Increment.vi" Type="VI" URL="../Zephan Functions/Increment.vi"/>
 				<Item Name="Go_To_Level.vi" Type="VI" URL="../Seth Functions/Go_To_Level.vi"/>
 				<Item Name="Detect Given Level.vi" Type="VI" URL="../Seth Functions/Lifters/Detect Given Level.vi"/>
+				<Item Name="Front Lifter Control.vi" Type="VI" URL="../Zephan Functions/Front Lifter Control.vi"/>
 			</Item>
 			<Item Name="Buttons" Type="Folder">
 				<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
@@ -176,6 +177,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Gyro_Calibration.vi" Type="VI" URL="../Seth Functions/Gyro_Calibration.vi"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -700,6 +702,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_EncoderRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderRefNum Registry Set.vi"/>
 				<Item Name="WPI_MotorControlRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlRefNum Registry Get.vi"/>
 				<Item Name="WPI_EncoderRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderRefNum Registry Get.vi"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 			</Item>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
