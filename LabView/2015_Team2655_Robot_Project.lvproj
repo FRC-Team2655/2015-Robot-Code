@@ -147,7 +147,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Lifters" Type="Folder">
 				<Item Name="Detect_Any_Level.vi" Type="VI" URL="../Seth Functions/Detect_Any_Level.vi"/>
 				<Item Name="Front_Lifter_Function.vi" Type="VI" URL="../Seth Functions/Front_Lifter_Function.vi"/>
-				<Item Name="Lift_Function.vi" Type="VI" URL="../Seth Functions/Lift_Function.vi"/>
 				<Item Name="Increment.vi" Type="VI" URL="../Zephan Functions/Increment.vi"/>
 				<Item Name="Go_To_Level.vi" Type="VI" URL="../Seth Functions/Go_To_Level.vi"/>
 				<Item Name="Detect Given Level.vi" Type="VI" URL="../Seth Functions/Lifters/Detect Given Level.vi"/>
