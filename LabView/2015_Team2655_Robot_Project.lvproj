@@ -151,6 +151,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Go_To_Level.vi" Type="VI" URL="../Seth Functions/Go_To_Level.vi"/>
 				<Item Name="Detect Given Level.vi" Type="VI" URL="../Seth Functions/Lifters/Detect Given Level.vi"/>
 				<Item Name="A.R.I._Hugger.vi" Type="VI" URL="../Seth Functions/Lifters/A.R.I._Hugger.vi"/>
+				<Item Name="ARI Control.vi" Type="VI" URL="../Claire Functions/ARI Control.vi"/>
 			</Item>
 			<Item Name="Buttons" Type="Folder">
 				<Item Name="Button_Detect.vi" Type="VI" URL="../Seth Functions/Button_Detect.vi"/>
