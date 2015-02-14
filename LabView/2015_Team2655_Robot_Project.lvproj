@@ -160,6 +160,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Case Selector.vi" Type="VI" URL="../Juan Functions/Case Selector.vi"/>
 				<Item Name="Up-Down.vi" Type="VI" URL="../Seth Functions/Lifters/Up-Down.vi"/>
 			</Item>
+			<Item Name="Drop Button.vi" Type="VI" URL="../Claire Functions/Drop Button.vi"/>
 		</Item>
 		<Item Name="John Functions" Type="Folder">
 			<Item Name="JoystickDeadZone.vi" Type="VI" URL="../John Functions/JoystickDeadZone.vi"/>
@@ -168,7 +169,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
 		<Item Name="Compressor Thing.vi" Type="VI" URL="../Claire Functions/Compressor Thing.vi"/>
-		<Item Name="Drop Button.vi" Type="VI" URL="../Claire Functions/Drop Button.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
