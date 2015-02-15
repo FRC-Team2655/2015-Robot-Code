@@ -156,6 +156,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Case Selector.vi" Type="VI" URL="../Juan Functions/Case Selector.vi"/>
 				<Item Name="Up-Down.vi" Type="VI" URL="../Seth Functions/Lifters/Up-Down.vi"/>
 				<Item Name="Choo Choo.vi" Type="VI" URL="../Claire Functions/Choo Choo.vi"/>
+				<Item Name="Up and Down POV.vi" Type="VI" URL="../Zephan Functions/Up and Down POV.vi"/>
 			</Item>
 		</Item>
 		<Item Name="John Functions" Type="Folder">
@@ -164,7 +165,6 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
-		<Item Name="Rumble.vi" Type="VI" URL="../Claire Functions/Rumble.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -724,9 +724,6 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="XInput9_1_0.dll" Type="Document" URL="XInput9_1_0.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -746,7 +743,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{980EAAB3-3632-4C6E-8261-281A41A3B1DC}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">11</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -756,7 +753,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{1F0EEB2A-F3A6-4093-A76E-79BD25D08825}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3D4B79EA-3C92-451A-A38F-86CCABE9E123}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Target/Robot Main.vi</Property>
