@@ -155,8 +155,8 @@ AddOutputFilter chunkFilter
 				<Item Name="Two Buttons One output.vi" Type="VI" URL="../Seth Functions/Two Buttons One output.vi"/>
 				<Item Name="Case Selector.vi" Type="VI" URL="../Juan Functions/Case Selector.vi"/>
 				<Item Name="Up-Down.vi" Type="VI" URL="../Seth Functions/Lifters/Up-Down.vi"/>
+				<Item Name="Choo Choo.vi" Type="VI" URL="../Claire Functions/Choo Choo.vi"/>
 			</Item>
-			<Item Name="Drop Button.vi" Type="VI" URL="../Claire Functions/Drop Button.vi"/>
 		</Item>
 		<Item Name="John Functions" Type="Folder">
 			<Item Name="JoystickDeadZone.vi" Type="VI" URL="../John Functions/JoystickDeadZone.vi"/>
@@ -164,6 +164,7 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
+		<Item Name="Rumble.vi" Type="VI" URL="../Claire Functions/Rumble.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -721,6 +722,9 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="XInput9_1_0.dll" Type="Document" URL="XInput9_1_0.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
