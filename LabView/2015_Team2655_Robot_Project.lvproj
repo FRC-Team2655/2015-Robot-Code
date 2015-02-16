@@ -120,13 +120,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Sensors" Type="Folder">
 			<Item Name="ADXRS450" Type="Folder">
-				<Item Name="ADXRS453 SPI Gyro.aliases" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.aliases"/>
-				<Item Name="ADXRS453 SPI Gyro.lvlps" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.lvlps"/>
-				<Item Name="ADXRS453 SPI Gyro.lvproj" Type="Document" URL="../Sensors/ADXRS450/ADXRS453 SPI Gyro.lvproj"/>
-				<Item Name="ADXRS453_Global.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Global.vi"/>
-				<Item Name="ADXRS453_Init.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Init.vi"/>
-				<Item Name="ADXRS453_Read.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Read.vi"/>
-				<Item Name="ADXRS453_Test.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453_Test.vi"/>
+				<Item Name="ADXRS453.vi" Type="VI" URL="../Sensors/ADXRS450/ADXRS453.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Support Code" Type="Folder">
@@ -716,6 +710,9 @@ AddOutputFilter chunkFilter
 				<Item Name="SD Read Number.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Read Number.vi"/>
 				<Item Name="SD Read Boolean.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Read Boolean.vi"/>
 				<Item Name="SD Read Value.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/SD Read Value.vi"/>
+				<Item Name="WPI_SPIGetSetRefNum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIGetSetRefNum.vi"/>
+				<Item Name="WPI_SPIRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIRefNum Registry Set.vi"/>
+				<Item Name="WPI_SPIRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIRefNum Registry Get.vi"/>
 			</Item>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
