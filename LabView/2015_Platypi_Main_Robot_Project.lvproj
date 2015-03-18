@@ -132,7 +132,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="Functions" Type="Folder">
+		<Item Name="Sub-Systems" Type="Folder">
 			<Item Name="Lifters" Type="Folder">
 				<Item Name="Front_Lifter_Function.vi" Type="VI" URL="../Seth Functions/Front_Lifter_Function.vi"/>
 				<Item Name="ARI Control.vi" Type="VI" URL="../Claire Functions/ARI Control.vi"/>
@@ -143,7 +143,6 @@ AddOutputFilter chunkFilter
 				<Item Name="XOR5.vi" Type="VI" URL="../Seth Functions/XOR5.vi"/>
 				<Item Name="Toggle.vi" Type="VI" URL="../Zephan Functions/Toggle.vi"/>
 				<Item Name="Two Buttons One output.vi" Type="VI" URL="../Seth Functions/Two Buttons One output.vi"/>
-				<Item Name="Case Selector.vi" Type="VI" URL="../Juan Functions/Case Selector.vi"/>
 				<Item Name="Up-Down.vi" Type="VI" URL="../Seth Functions/Lifters/Up-Down.vi"/>
 				<Item Name="Choo Choo.vi" Type="VI" URL="../Claire Functions/Choo Choo.vi"/>
 				<Item Name="Up and Down POV.vi" Type="VI" URL="../Zephan Functions/Up and Down POV.vi"/>
@@ -153,6 +152,11 @@ AddOutputFilter chunkFilter
 			<Item Name="JoystickDeadZone.vi" Type="VI" URL="../John Functions/JoystickDeadZone.vi"/>
 			<Item Name="Limits.vi" Type="VI" URL="../John Functions/Limits.vi"/>
 		</Item>
+		<Item Name="Juan Functions" Type="Folder">
+			<Item Name="Joystick Sensitivity.vi" Type="VI" URL="../Juan Functions/Joystick Sensitivity.vi"/>
+			<Item Name="Joystick_Deadband.vi" Type="VI" URL="../Juan Functions/Joystick_Deadband.vi"/>
+			<Item Name="Case Selector.vi" Type="VI" URL="../Juan Functions/Case Selector.vi"/>
+		</Item>
 		<Item Name="Claire Functions" Type="Folder">
 			<Item Name="I2C Communication.vi" Type="VI" URL="../Claire Functions/I2C Communication.vi"/>
 		</Item>
@@ -160,9 +164,6 @@ AddOutputFilter chunkFilter
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
-		<Item Name="Joystick Sensitivity.vi" Type="VI" URL="../Joystick Sensitivity.vi"/>
-		<Item Name="Joystick_Deadband.vi" Type="VI" URL="../Joystick_Deadband.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -470,14 +471,6 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_ERRMotorControlCANJaguarDevice.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_ERRMotorControlCANJaguarDevice.vi"/>
 				<Item Name="WPI_ERRMotorControlCANJaguarFirmware.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_ERRMotorControlCANJaguarFirmware.vi"/>
 				<Item Name="WPI_ERRPwmChannelAllocated.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/PWM/WPI_ERRPwmChannelAllocated.vi"/>
-				<Item Name="WPI_Gyro_ADXRS453_Bit0OddParity.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_Bit0OddParity.vi"/>
-				<Item Name="WPI_Gyro_ADXRS453_BitArrayToSPI.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_BitArrayToSPI.vi"/>
-				<Item Name="WPI_Gyro_ADXRS453_Commands.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_Commands.ctl"/>
-				<Item Name="WPI_Gyro_ADXRS453_ReadRegister.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_ReadRegister.vi"/>
-				<Item Name="WPI_Gyro_ADXRS453_ReadSensorData.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_ReadSensorData.vi"/>
-				<Item Name="WPI_Gyro_ADXRS453_Registers.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_Registers.ctl"/>
-				<Item Name="WPI_Gyro_ADXRS453_SPIToBitArray.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_SPIToBitArray.vi"/>
-				<Item Name="WPI_Gyro_ADXRS453_Status.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/ADXRS453/WPI_Gyro_ADXRS453_Status.ctl"/>
 				<Item Name="WPI_JoystickClose.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickClose.vi"/>
 				<Item Name="WPI_JoystickDeviceEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickDeviceEnum.ctl"/>
 				<Item Name="WPI_JoystickDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/WPI_JoystickDevRef.ctl"/>
