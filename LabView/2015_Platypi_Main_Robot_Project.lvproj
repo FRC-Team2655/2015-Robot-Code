@@ -147,6 +147,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Choo Choo.vi" Type="VI" URL="../Claire Functions/Choo Choo.vi"/>
 				<Item Name="Up and Down POV.vi" Type="VI" URL="../Zephan Functions/Up and Down POV.vi"/>
 			</Item>
+			<Item Name="Direction Correction.vi" Type="VI" URL="../Direction Correction.vi"/>
 		</Item>
 		<Item Name="John Functions" Type="Folder">
 			<Item Name="JoystickDeadZone.vi" Type="VI" URL="../John Functions/JoystickDeadZone.vi"/>
@@ -796,7 +797,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{980EAAB3-3632-4C6E-8261-281A41A3B1DC}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">54</Property>
+				<Property Name="Bld_version.build" Type="Int">64</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -806,7 +807,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{1933AD76-B4E6-43DA-A4A8-0C7E8F26E651}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{79F2BA70-DC99-4799-AE1D-647EA02EA4F3}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Target/Robot Main.vi</Property>
