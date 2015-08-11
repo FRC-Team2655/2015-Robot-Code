@@ -18,7 +18,6 @@
 		<Item Name="WPI_SimpleGyro_RefNum Registry Get.vi" Type="VI" URL="../WPI_SimpleGyro_RefNum Registry Get.vi"/>
 		<Item Name="WPI_SimpleGyro_RefNum Registry Set.vi" Type="VI" URL="../WPI_SimpleGyro_RefNum Registry Set.vi"/>
 		<Item Name="WPI_SimpleGyro_Reset.vi" Type="VI" URL="../WPI_SimpleGyro_Reset.vi"/>
-		<Item Name="WPI_SimpleGyro_Reset_180.vi" Type="VI" URL="../WPI_SimpleGyro_Reset_180.vi"/>
 	</Item>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
